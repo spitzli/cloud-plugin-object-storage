@@ -1,0 +1,65 @@
+{
+  "baseSource": "d61452fa36013a0eac9c1a62e8d7de083cba4e6b",
+  "date": "2026-11-12",
+  "formatVersion": 1,
+  "licenseUnchanged": true,
+  "originalSourceSnapshotRetained": true,
+  "package": "spitzli-object-storage-plugin",
+  "preservedBindingFilesSHA256": {
+    "COMMERCIAL-LICENSING.md": "5b8832f5014f16e2cf4f7ee295de32760eed20981495d184bd9f1517be256a09",
+    "EXPORT-PROVENANCE.json": "7914b9b9f0c65a2d346c6cd08d9592440c3eddce86b4f99abc110d059ff2e7c4",
+    "LICENSE": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0",
+    "manifest.json": "1d4c555be714d2153b33bc6dc2ce7deee569ffcdd0bafff8da886d04cbc5c1e5",
+    "migrations/0001_metadata.sql": "5be118d630c588eefa43801360f81bae5f668e940f037901dcba0e4f24a242b6"
+  },
+  "qualifiedChangedSourceSHA256": {
+    "Cargo.lock": "d5617b300a54b2e2514ad7b3b255f7c04f0a6a093bbc4da8e7b4d0858decbe09",
+    "Cargo.toml": "e2fe5ac5938110c3da9ebf30b4aa124fa8692ad1a2bae3892756996d0263a1db",
+    "Dockerfile": "9f35da1ca1e23dfa2268677c0d22197095be770660597614c1beee2c94112508",
+    "NOTICE": "4949ccd63735c148d2fd1f1423772d11938087ba0bdbcf4aad81c576bcfa09b8",
+    "scripts/plugin-release/release.mjs": "30462a348f238bc78dab840688199574ad4fc5e9b039310306d6210f4c433890",
+    "src/data.rs": "0f7d1c05d0ec189fc1ebeb4bdcb518ee4a8459d56f79fc098aa43582bf9af4b0",
+    "src/engine.rs": "5adb9b6cb33045c0b9e31a11b38c9d1da28450cfebdadb1d267651fec1051d64",
+    "src/lib.rs": "1ae7cfc6f3a7e76627f8e09430be365787289077d0dd775924a1643807a85d60",
+    "src/main.rs": "fe3384602151a455022f8498e4d4bccf7a2b20f313e9cec2ce18474b83e5ce25",
+    "src/minio.rs": "6dfcb6ef0d294012fec1aa15189313083ae11bf50c29f60eb85f16837890a8dd",
+    "src/provider.rs": "ca421495cd41048d5584c87c13756c664b7609f47e58cdf5ae63b373588dcfa0",
+    "src/sdk.rs": "7fcc2b79d4c181da815e4382c8b8305f72b79cafc5b1752f7c40bd484f5153da",
+    "src/store.rs": "c5b34cac289f16a9c6d58d1eca38f9af9fa60b3976505e008d50a07f10fdbd41",
+    "standalone.json": "77b6de47ddf4933982e03e9cc76f2c12434792df59c2a148f3b8f8ef85d16694",
+    "tests/data.rs": "a6b7436f240ec1e73752892fb9b755eac4ff49a325ccd702f9582f40b5da58b0",
+    "tests/lifecycle.rs": "43aa2cdb6ed69042f2af3aac1bb9a430ff882ac746dd81d3f5a337bff4c242b6",
+    "tests/manifest.rs": "7357945934faa6e035a551cea2f3788a32b6dc7ca3b3298f5798b8fc0ca6a6c5",
+    "tests/minio_acceptance.rs": "65386a40b1533c50686157633f2fe5cf2d4acf8029f021c1884e4b38bbd1c07a",
+    "tests/native_tls_startup.rs": "5ca327d28526939ca5bc8764853211f0c4fdc826ea7b8233b0c5fb7a5f47113d",
+    "tests/provider_contract.rs": "d07092e904bf7cfec43f2c4cd9e9c5e5d590c6339514e05dce4fbff14eb0c07a",
+    "tests/support/mod.rs": "ecd5200aae889004847fe859bb04fc4127adc839dc6598288056f5dbd2f46c05",
+    "tools/manifest-validator/Cargo.lock": "ae2cb28761abf9ce99c9f5c4df246d47d61955a9919907fd222f511d13d84ba6",
+    "tools/manifest-validator/Cargo.toml": "81aa8724804a7f701f7b312c8851937369409d029071d2034dbd6f535b86df6a",
+    "tools/manifest-validator/src/main.rs": "bb5f5ab38c63e2c28aa64a329696e923aa747e62de2d058e2de734ada06e72b4",
+    "ui/index.tsx": "4bc789de2755c09cb80ab1d4411b8f065d8b80e2d92982bcaf9d771fa1d0d88e"
+  },
+  "runtimeArtifactsReplaced": false,
+  "scope": "Rust package/import and binary namespace, host UI import namespace, paired test environment variables and exact SDK pin",
+  "sdkGit": "https://github.com/spitzli/cloud-plugin-sdk",
+  "sdkRevision": "8019f3df67dba3fed3083f22635e4725028c1b5e",
+  "sourceChecks": {
+    "allRegistryLockfilesPreserved": [
+      "Cargo.lock",
+      "tools/manifest-validator/Cargo.lock"
+    ],
+    "format": true,
+    "releaseContract": true,
+    "rustLiteralFilesChecked": 17,
+    "strictClippy": true,
+    "testsIgnored": 29,
+    "testsPassed": 18,
+    "ui": {
+      "component": "object-storage",
+      "hostConsoleSource": "a9fa78a6264a64a5e3e9405a49d94da189f7638b",
+      "typecheckPassed": true
+    }
+  },
+  "version": "0.5.0",
+  "wireStoredCryptographicAndExternalResourceBindings": "retained for coordinated migration"
+}
