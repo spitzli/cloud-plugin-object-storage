@@ -1,7 +1,7 @@
 //! Test-only databases on the fresh container owned by fixtures/postgres.py.
 use serde_json::Value;
+use spitzli_object_storage_plugin::store::Store;
 use tokio_postgres::Client;
-use webdock_object_storage_plugin::store::Store;
 
 pub fn database_url(database: &str) -> String {
     assert!(
@@ -11,11 +11,11 @@ pub fn database_url(database: &str) -> String {
                 .all(|b| b.is_ascii_alphanumeric() || b == b'_')
     );
     let path = std::path::PathBuf::from(
-        std::env::var_os("WEBDOCK_OBJECT_STORAGE_POSTGRES_CONFIG")
+        std::env::var_os("SPITZLI_OBJECT_STORAGE_POSTGRES_CONFIG")
             .expect("run fixtures/postgres.py"),
     );
     let config: Value = serde_json::from_slice(
-        &webdock_plugin_kit::read_file(&path, true).expect("private fixture config"),
+        &spitzli_plugin_kit::read_file(&path, true).expect("private fixture config"),
     )
     .expect("fixture JSON");
     let mut url =
@@ -34,7 +34,7 @@ impl Database {
         let url = database_url(&name);
         let mut admin = url::Url::parse(&url).unwrap();
         admin.set_path("postgres");
-        let client = webdock_plugin_kit::postgres::connect(admin.as_str(), None)
+        let client = spitzli_plugin_kit::postgres::connect(admin.as_str(), None)
             .await
             .expect("owned fixture connection");
         client
@@ -49,7 +49,7 @@ impl Database {
             .expect("metadata store")
     }
     pub async fn client(&self) -> Client {
-        webdock_plugin_kit::postgres::connect(&self.url, None)
+        spitzli_plugin_kit::postgres::connect(&self.url, None)
             .await
             .expect("owned fixture connection")
     }
